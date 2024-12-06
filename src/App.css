@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
+* {}
+
+body {
+    background-color: #101820;
+    color: #FEE715;
+    font-family: "Work Sans", sans-serif;
+}
+
+.images {
+    margin-top: 10px;
+    height: 430px;
+    width: 100%;
+}
+
+p {
+    font-weight: 300;
+    margin: 5px;
+}
+
+.contain {
+    color: white;
+}
+
+.product {
+    display: flex;
+    margin-top: -320px;
+    color: white;
+    ;
+    margin-left: 40px;
+}
+
+.contain button {
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    background-color: #101820;
+    color: #FEE715;
+    margin: 10px;
+    margin-left: -15px;
+}
+
+.card-grid {
+    display: flex;
+}
+
+.card {
+    width: 302px;
+    margin: 30px;
+    background-color: rgb(50, 50, 50);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.card-grid img {
+    width: 300px;
+    height: 250px;
+}
+
+.card button {
+    background-color: #101820;
+    color: #FEE715;
+    width: 93%;
+    height: 40px;
+    border: none;
+    margin: 0px 10px 10px 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.card p {
+    color: rgb(167, 164, 164);
+    margin: 11px;
+}
+
+.card h3 {
+    align-items: center;
+    color: rgb(167, 164, 164);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.company-list {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+}
+
+.company-list img {
+    width: 280px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.product-title h3 {
+    color: WHITE;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.product-title1 h3 {
+    color: WHITE;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.mark {
+    font-weight: 400;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bolder;
+    margin: -10px;
+    color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.07)20%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    background-clip: text;
+}
+
+.contact {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #101815;
+    margin-top: 40px;
+}
+
+.contact input {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    background: rgb(50, 50, 50);
+    border: none;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    width: 300px;
+    height: 120px;
+    margin: 10px;
+    background: rgb(50, 50, 50);
+    border: none;
+    border-radius: 4px;
+}
+
+.contact button {
+    width: 300px;
+    height: 40px;
+    background-color: #FEE715;
+    color: #101820;
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.contact button:hover {
+    background-color: #3d5a8d;
+}
+
+label {
+    margin-left: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(45, 44, 44);
+    margin: 0%
+}
+
+.footer p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin: 0%;
+}
+
+@media (max-width:768px) {
+    .contain button {
+        height: 40px;
+        width: 200px;
+        border-radius: 15px;
+        border: none;
+        background-color: #101820;
+        color: #FEE715;
+        margin: 10px;
+        margin-left: -15px;
+    }
+    .images {
+        margin-top: 10px;
+        height: 410px;
+        width: 100%;
+    }
+    .product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -350px;
+        color: white;
+    }
+    .contain h1,
+    .contain p {
+        margin: 10px;
+        color: white;
+        margin-left: -10px;
+        font-weight: 300;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .card-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card button {
+        border-radius: 2px;
+    }
+    .company-list {
+        margin: 10px;
+    }
+    .company-list img {
+        width: 150px;
+        height: 130px;
+        border-radius: 5px;
+    }
+    .mark {
+        font-size: 70px;
+    }
+}
