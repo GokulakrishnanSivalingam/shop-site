@@ -98,14 +98,14 @@ li {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 30%;
+        width: 40%;
         height: fit-content;
         text-align: left;
         position: absolute;
         top: 57px;
         right: 0;
         background-color: rgb(41, 41, 41);
-        padding: 15px;
+        padding: 5px;
         border-radius: 10px;
     }
     .nav-links.active {
