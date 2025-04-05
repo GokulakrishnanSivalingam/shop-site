@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
 * {}
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color: #101820;
     color: #FEE715;
@@ -58,7 +60,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 180px;
+    margin-top: -40px;
 }
 
 .card-grid img {
@@ -142,11 +144,50 @@ p {
     background-clip: text;
 }
 
+  
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .marks {
+    font-size: 80px;
+    font-weight: bolder;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 20%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    padding-right: 100px; /* space between repeated text */
+    margin-top: 150px;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
 .contact {
     display: grid;
     justify-content: center;
     align-items: center;
-    background: #101815;
+    background:#101820;
     margin-top: 40px;
 }
 
@@ -201,7 +242,121 @@ label {
     height: 50px;
     margin: 0%;
 }
-
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #101820;
+    color: #FEE715;
+    padding: 60px 40px;
+    gap: 50px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-form, .footer-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1A1D23;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(254, 231, 21, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form:hover,
+  .footer-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(254, 231, 21, 0.2);
+  }
+  
+  .contact-form h1,
+  .footer-info h2 {
+    font-size: 28px;
+    font-family: "Anton SC", sans-serif;
+    margin-bottom: 25px;
+    color: #FEE715;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #2d2f36;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border: 1px solid #FEE715;
+    box-shadow: 0 0 5px rgba(254, 231, 21, 0.4);
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #FEE715;
+    color: #101820;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #3d5a8d;
+    color: white;
+  }
+  
+  .footer-info p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #e3e3e3;
+    line-height: 1.5;
+  }
+  
+  .footer-info a {
+    color: #FEE715;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-info a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  
+    .contact-form,
+    .footer-info {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
 @media (max-width:768px) {
     .contain button {
         height: 40px;
@@ -218,6 +373,7 @@ label {
         height: 410px;
         width: 100%;
     }
+  
     .product {
         display: flex;
         align-items: center;
@@ -236,7 +392,7 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-top: -50px;
     }
     .card-grid {
         display: flex;

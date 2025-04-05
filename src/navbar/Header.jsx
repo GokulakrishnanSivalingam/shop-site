@@ -11,18 +11,18 @@ const Header = () => {
 
     return (
         <header className="header">
-          <div className="title"><img src={logo} alt="" /></div>
+            <div className="title">
+                <img src={logo} alt="Logo" />
+            </div>
             <nav className="navbar">
                 <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/consumer">Products</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/register">Signup</Link></li>
-                   
+                    <li><a to="/" onClick={() => setIsOpen(false)}>Home</a></li>
+                    <li><a href="#product" onClick={() => setIsOpen(false)}>Products</a></li>
+                    <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+                    
                 </ul>
                 
-                <div className="hamburger" onClick={toggleMenu}>
-                
+                <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
