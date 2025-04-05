@@ -6,6 +6,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './navbar/Header'
 import {Link} from "react-router-dom"
+import shop from "./image/sh5.jpg"
+import shop1 from "./image/sh1.jpg"
+import shop2 from "./image/sh2.jpg"
+import shop3 from "./image/sh3.jpg"
 function App() {
   const [count, setCount] = useState(0)
   useEffect(() => {
@@ -15,17 +19,25 @@ function App() {
     <>
      <div>
       <Header/>
-    
-        <img src="https://images.pexels.com/photos/1409215/pexels-photo-1409215.jpeg?auto=compress&cs=tinysrgb&w=600" className="images" />
+      <div className="slideshow-container">
+<div class="slideshow-wrapper">
+    <div className="slide">
+        <img src={shop} alt="Movie 2"/>
+    </div>
+    <div className="slide">
+        <img src={shop1} alt="Movie 3"/>
+    </div>
+    <div className="slide">
+        <img src={shop2} alt="Movie 4"/>
+    </div>
+    <div className="slide">
+        <img src={shop3} alt="Movie 4"/>
+    </div>
+    </div>
+</div>
       
-      <div className="product">
-        <div className="contain">
-        <h1>Power Up Your Life with Quality Electrical Solutions!</h1>
-        <p>we are always ready to assist you, whether you need technical advice, or installation tips.</p>
-    <button onClick>see more</button>
-    </div>  
-      </div>
-      <div class="marquee-container">
+     
+      <div class="marquee-container1">
   <div class="marquee-track">
     <span class="marks">SERVICES__SERVICES__SERVICES__SERVICES__SERVICES </span>
     <span class="marks">SERVICES__SERVICES__SERVICES__SERVICES</span>
