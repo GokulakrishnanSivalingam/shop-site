@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Header.css';
 import { Link } from "react-router-dom";
-import logo from "../image/logo.png"
+import logo from "../image/logo1.png"
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -16,9 +16,9 @@ const Header = () => {
             </div>
             <nav className="navbar">
                 <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-                    <li><a to="/" onClick={() => setIsOpen(false)}>Home</a></li>
-                    <li><a href="#product" onClick={() => setIsOpen(false)}>Products</a></li>
-                    <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><a href="#product" >Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     
                 </ul>
                 

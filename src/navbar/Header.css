@@ -12,9 +12,12 @@ body {
     background-color: #101820;
     display: flex;
     color: #FEE715;
-    padding: 1 rem;
+     /* fix spacing - remove space between "1" and "rem" */
     align-items: center;
     justify-content: space-between;
+
+    position: relative;  /* Add this */
+    z-index: 10;    
 }
 
 .header h1 {
@@ -92,6 +95,7 @@ li {
     margin: 4px;
     margin-top: 10px;
     margin-left: 15px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:768px) {
