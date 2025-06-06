@@ -1,6 +1,7 @@
 import { useState ,useEffect} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import LocationMap from './LocationMap'
 import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -112,7 +113,8 @@ function App() {
     <img src="https://imgs.search.brave.com/y__grqTg7iaJ2lZGnvLFb9577Om2sgzTecgmQUawiPI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hcmNo/aXZlLm9yZy9kb3du/bG9hZC9zdXByZW1l/LWJvcmV3ZWxsLXN1/Ym1lcnNpYmxlLXBp/cGVzL1N1cHJlbWVf/Qm9yZXdlbGxfU3Vi/bWVyc2libGVfUGlw/ZXMuanBn" alt="" /></div>
     
     </div>
-    <div className="contact">
+    <div className="contact-container">
+    <div className="contact-form">
 <center><h1 id='contact'>Contact</h1></center>
 
   <label htmlFor="">Name</label>
@@ -125,6 +127,11 @@ function App() {
   <textarea name="" id="" placeholder=''></textarea>
   <button>Send</button>
 
+</div>
+
+<div className='location'>
+    <LocationMap/>
+</div>
 </div>
 <div className="footer">
   <p>&copy; CopyRights for our site</p>

@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background-color: #101820;
+    background:#192632;
     color: #FEE715;
     font-family: "Work Sans", sans-serif;
 }
@@ -223,46 +223,7 @@ p {
     }
   }
   
-.contact {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background:#101820;
-    margin-top: 40px;
-}
 
-.contact input {
-    width: 300px;
-    height: 40px;
-    margin: 10px;
-    background: rgb(50, 50, 50);
-    border: none;
-    border-radius: 4px;
-}
-
-.contact textarea {
-    width: 300px;
-    height: 120px;
-    margin: 10px;
-    background: rgb(50, 50, 50);
-    border: none;
-    border-radius: 4px;
-}
-
-.contact button {
-    width: 300px;
-    height: 40px;
-    background-color: #FEE715;
-    color: #101820;
-    border: none;
-    border-radius: 4px;
-    margin: 10px;
-    margin-bottom: 30px;
-}
-
-.contact button:hover {
-    background-color: #3d5a8d;
-}
 
 label {
     margin-left: 15px;
@@ -271,7 +232,7 @@ label {
 .footer {
     width: 100%;
     height: 50px;
-    background-color: rgb(45, 44, 44);
+     background:#253442;
     margin: 0%
 }
 
@@ -280,41 +241,32 @@ label {
     align-items: center;
     display: flex;
     height: 50px;
-    margin: 0%;
+    margin-bottom: 0%;
+    color:  rgb(168, 164, 164);;
 }
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #101820;
-    color: #FEE715;
-    padding: 60px 40px;
-    gap: 50px;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+justify-content: start;
   }
-  
-  .contact-form, .footer-info {
-    flex: 1;
-    min-width: 300px;
-    background-color: #1A1D23;
-    padding: 30px;
+  .contact-form{
+    
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(254, 231, 21, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 30px;
+   
   }
-  
-  .contact-form:hover,
-  .footer-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(254, 231, 21, 0.2);
-  }
-  
+  .location
+{
+  margin: 30px;
+}
+
   .contact-form h1,
   .footer-info h2 {
     font-size: 28px;
-    font-family: "Anton SC", sans-serif;
+    color: rgb(168, 164, 164);
     margin-bottom: 25px;
-    color: #FEE715;
+   
     text-align: center;
     letter-spacing: 1px;
   }
@@ -332,7 +284,7 @@ label {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
-    background: #2d2f36;
+    background:#253442;
     border: 1px solid #444;
     border-radius: 6px;
     color: white;
@@ -348,11 +300,11 @@ label {
   }
   
   .contact-form button {
-    width: 100%;
+    width: 110%;
     padding: 12px;
     margin-top: 25px;
-    background-color: #FEE715;
-    color: #101820;
+    background:#3d5a8d;
+    color: rgb(230, 225, 225);
     font-weight: 600;
     border: none;
     border-radius: 6px;
@@ -387,13 +339,24 @@ label {
   @media (max-width: 768px) {
     .contact-container {
       flex-direction: column;
-      padding: 30px 20px;
+      padding: 20px;
     }
   
-    .contact-form,
-    .footer-info {
+    .contact-form
+     {
+      margin: 10px;
+    }
+    .contact-form input,.contact-form textarea{
+        width: 95%;
+    }
+    .contact-form button{
       width: 100%;
-      margin-bottom: 30px;
+    }
+    .location{
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
     }
   }
   
@@ -453,7 +416,7 @@ label {
     }
     .marquee-container1
     {
-        margin-top: -170px;
+        margin-top: -200px;
     }
     .mark,.marks{
         font-size: 60px;

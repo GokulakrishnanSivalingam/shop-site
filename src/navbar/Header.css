@@ -9,9 +9,9 @@ body {
 }
 
 .header {
-    background-color: #101820;
+    background:#1e2d3b;
     display: flex;
-    color: #FEE715;
+    color: rgb(168, 164, 164);
      /* fix spacing - remove space between "1" and "rem" */
     align-items: center;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #FEE715;
+    color: rgb(168, 164, 164);
 }
 
 .hamburger {
@@ -55,8 +55,8 @@ body {
 
 .hamburger .bar {
     width: 30px;
-    height: 4px;
-    background-color: #FEE715;
+    height: 4px; background-color:rgb(168, 164, 164);
+   
     margin: 4px;
     border-radius: 5px;
 }
@@ -108,7 +108,7 @@ li {
         position: absolute;
         top: 57px;
         right: 0;
-        background-color: rgb(41, 41, 41);
+        background:#253442;
         padding: 15px;
         border-radius: 10px;
     }
