@@ -88,7 +88,7 @@ p {
 .card {
     width: 302px;
     margin: 30px;
-    background-color: rgb(50, 50, 50);
+    background:#253442;
 }
 
 .card-container {
@@ -454,7 +454,7 @@ justify-content: start;
     border-radius: 10px;
     height: 300px;
     width: 90%;
-    margin: 10px;
+    margin: 15px;
     margin-bottom: 60px;
     margin-top: 40px;
   }
@@ -471,6 +471,10 @@ justify-content: start;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
+  }
+  #third
+  {
+    display: none;
   }
   
 
