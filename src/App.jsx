@@ -66,6 +66,22 @@ function App() {
      
     </div></div>
     </div>
+    <div className="about-container">
+      <div className="about-img">
+        <img src="https://i.pinimg.com/originals/f2/a1/4b/f2a14bdfc9a0c796fa46cad6d3805f9e.gif" alt="" />
+      </div>
+      <div className="about">
+        <center><h1>About us</h1>
+        </center>
+        <p>Welcome to Siva Electricals, your trusted neighborhood store for all things electrical, plumbing, and DTH recharge services. Located in the heart of the community, we’ve been lighting up homes and powering lifestyles with quality products and dependable service.
+
+With a strong foundation built on honesty and customer satisfaction, we offer a wide range of electrical items, from everyday essentials to advanced home wiring solutions. We also provide plumbing materials for household repairs and construction needs, as well as Sun Direct TV recharges to keep your family entertained without interruption.
+<br/>
+<br/>
+
+</p>
+      </div>
+    </div>
     <div class="marquee-container" id="product">
   <div class="marquee-track">
     <span class="mark">PRODUCTS__PRODUCTS__PRODUCTS__PRODUCTS__PRODUCTS__</span>

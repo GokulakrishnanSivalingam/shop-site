@@ -317,7 +317,35 @@ justify-content: start;
     background-color: #3d5a8d;
     color: white;
   }
-  
+  .about-container
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .about-img img
+  {
+    border-radius: 10px;
+    height: 350px;
+    width: 450px;
+    margin: 40px;
+  }
+  .about
+  {
+    margin: 40px;
+    margin-top: -20px;
+    text-align: justify;
+  }
+  .about p
+  {
+    color : rgb(167, 164, 164);
+    font-size: 20px;
+  }
+  .about h1
+  {
+    color : rgb(167, 164, 164);
+  }
   .footer-info p {
     font-size: 14px;
     margin: 10px 0;
@@ -421,6 +449,29 @@ justify-content: start;
     .mark,.marks{
         font-size: 60px;
     }
+     .about-img img
+  {
+    border-radius: 10px;
+    height: 300px;
+    width: 90%;
+    margin: 10px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  .about
+  {
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-align: justify;
+  }
+   .about-container
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
   
 
 }
