@@ -250,11 +250,16 @@ label {
 justify-content: start;
   }
   .contact-form{
-    
+    width: 300px;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 30px;
-   
+    background-color: #202e3d;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    
+    
   }
   .contact-form p{
     color:green;
@@ -284,7 +289,7 @@ justify-content: start;
   
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     margin-top: 8px;
     background:#253442;
@@ -294,7 +299,9 @@ justify-content: start;
     font-size: 14px;
     outline: none;
     transition: border 0.3s ease;
+   
   }
+   
   
   .contact-form input:focus,
   .contact-form textarea:focus {
@@ -303,7 +310,7 @@ justify-content: start;
   }
   
   .contact-form button {
-    width: 110%;
+    width: 100%;
     padding: 12px;
     margin-top: 25px;
     background:#3d5a8d;
@@ -314,6 +321,7 @@ justify-content: start;
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 16px;
+    
   }
   
   .contact-form button:hover {
@@ -382,7 +390,7 @@ justify-content: start;
       margin: 10px;
     }
     .contact-form input,.contact-form textarea{
-        width: 95%;
+        width: 90%;
     }
     .contact-form button{
       width: 100%;
