@@ -136,15 +136,15 @@ p {
 }
 
 .company-list {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 25px;
 }
 
 .company-list img {
-    width: 280px;
-    height: 220px;
-    border-radius: 10px;
+    width: 170px;
+    height: 150px;
+    border-radius: 15px;
 }
 
 .product-title h3 {
@@ -366,6 +366,10 @@ justify-content: start;
     color: #ffffff;
     text-decoration: underline;
   }
+  #third
+  {
+    display: none;
+  }
   
   @media (max-width: 768px) {
     .contact-container {
@@ -438,11 +442,11 @@ justify-content: start;
         border-radius: 2px;
     }
     .company-list {
-        margin: 10px;
+        margin: 15px;
     }
     .company-list img {
-        width: 150px;
-        height: 130px;
+        width: 130px;
+        height: 110px;
         border-radius: 5px;
     }
     .marquee-container1
@@ -475,10 +479,11 @@ justify-content: start;
     justify-content: center;
     flex-wrap: wrap-reverse;
   }
-  #third
+  #third1
   {
     display: none;
   }
+  
   
 
 }
