@@ -256,6 +256,9 @@ justify-content: start;
     margin: 30px;
    
   }
+  .contact-form p{
+    color:green;
+  }
   .location
 {
   margin: 30px;
