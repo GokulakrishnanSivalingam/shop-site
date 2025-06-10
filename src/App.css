@@ -250,7 +250,7 @@ label {
 justify-content: start;
   }
   .contact-form{
-    width: 300px;
+   width: 300px;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 30px;
@@ -258,6 +258,7 @@ justify-content: start;
     justify-content: center;
     align-items: center;
     display: grid;
+   animation: fadeLeft 1s ease-in-out;
     
     
   }
@@ -267,6 +268,7 @@ justify-content: start;
   .location
 {
   margin: 30px;
+  animation: fadeRight 1s ease-in-out;
 }
 
   .contact-form h1,
@@ -378,6 +380,25 @@ justify-content: start;
   {
     display: none;
   }
+  @keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.98); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
   
   @media (max-width: 768px) {
     .contact-container {
@@ -388,6 +409,7 @@ justify-content: start;
     .contact-form
      {
       margin: 10px;
+       width:93%;
     }
     .contact-form input,.contact-form textarea{
         width: 90%;
